@@ -1,2 +1,4 @@
 # Slidingmode-sim
-Simulation UAV 
+A Simulation UAV with sliding mode control for positon control and MPC for altitude control
+
+
