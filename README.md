@@ -11,6 +11,6 @@ https://youtu.be/_yuPmf6i__c
 ![control](https://user-images.githubusercontent.com/57325726/119545675-5cd16100-bd93-11eb-8a19-224ce42ff7a0.png)
 
 Modified by HUY 
-code original by Mark Misin’s course ​ Applied
+Code original of Mark Misin’s course ​ Applied
 Control Systems for Engineers 2 - UAV drone
 control
