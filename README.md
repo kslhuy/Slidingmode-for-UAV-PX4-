@@ -10,3 +10,7 @@ https://youtu.be/_yuPmf6i__c
 ![ZandZ_dot](https://user-images.githubusercontent.com/57325726/119545668-5ba03400-bd93-11eb-910b-040bc06d1dc1.png)
 ![control](https://user-images.githubusercontent.com/57325726/119545675-5cd16100-bd93-11eb-8a19-224ce42ff7a0.png)
 
+Modified by HUY 
+code original by Mark Misin’s course ​ Applied
+Control Systems for Engineers 2 - UAV drone
+control
