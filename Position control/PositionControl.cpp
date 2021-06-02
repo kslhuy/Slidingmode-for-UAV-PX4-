@@ -187,10 +187,10 @@ void PositionControl::_velocityControl(const float dt)
 	// SMC control
 	Vector3f vel_error = _vel_sp - _vel;
 	// Gain for ST term
-	Vector3f K_s_1 = Vector3f(0.75,0.75,0.8); /// 0.7 , 0.7 , 1
-	Vector3f K_s_2 = Vector3f(0.9,0.9,1);/// 1 1 1
+	Vector3f K_s_1 = Vector3f(1.2,1.2,1.2); /// 0.7 , 0.7 , 1
+	Vector3f K_s_2 = Vector3f(1,1,1);/// 1 1 1
 	// Vector3f surface = vel_error + (_pos_sp - _pos).emult(_gain_pos_p);
-	Vector3f surface = vel_error ;
+	Vector3f surface = vel_error;
 	float s_x = surface(0);
 	float s_y = surface(1);
 	float s_z = surface(2);
@@ -199,10 +199,10 @@ void PositionControl::_velocityControl(const float dt)
 	Vector3f sat_xyz = _vel_int;
 	// // Update integral part of v_xyz (Switching term)
         _vel_int += _vel_int.emult(K_s_2)*dt;
-	//limit thrust integral
-	_vel_int(2) = math::min(fabsf(_vel_int(2)), CONSTANTS_ONE_G) * sign(_vel_int(2));
+	// //limit thrust integral
+	// _vel_int(2) = math::min(fabsf(_vel_int(2)), CONSTANTS_ONE_G) * sign(_vel_int(2));
 	// Total  SUPER twsing term
-	Vector3f SW = Vector3f (_vel_int(0) + sqrt(fabsf(sat_xyz(0))*K_s_1(0)),_vel_int(1) + sqrt(fabsf(sat_xyz(1)))*(K_s_1(1)),_vel_int(2) + sqrt(fabsf(sat_xyz(2)))*(K_s_1(2)));
+	Vector3f SW = Vector3f (_vel_int(0) + sqrt(fabsf(sat_xyz(0)))*K_s_1(0),_vel_int(1) + sqrt(fabsf(sat_xyz(1)))*K_s_1(1),_vel_int(2) + sqrt(fabsf(sat_xyz(2)))*K_s_1(2));
 
 
 	// Vector3f Switch_cd = Vector3f(ControlMath::sat(s_x/0.5f),ControlMath::sat(s_y/0.5f),ControlMath::sat(s_z/0.5f));
