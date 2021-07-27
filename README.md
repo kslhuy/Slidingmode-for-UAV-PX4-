@@ -1,5 +1,5 @@
 # Slidingmode-sim
-A Simulation UAV with python and Matlab ,
+A Simulation UAV with python ,Matlab , C++ for FX4 
 sliding mode control for positon control 
 
 
