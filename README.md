@@ -1,6 +1,6 @@
 # Slidingmode-sim
 A Simulation UAV with python ,Matlab , C++ for FX4 
-sliding mode control for positon control 
+sliding mode control for tracking trajectorie 
 
 
 https://youtu.be/_yuPmf6i__c
