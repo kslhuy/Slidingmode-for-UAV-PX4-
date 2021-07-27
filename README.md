@@ -1,5 +1,7 @@
 # Slidingmode-sim
-A Simulation UAV with sliding mode control for positon control and MPC for altitude control
+A Simulation UAV with python and Matlab ,
+sliding mode control for positon control 
+
 
 https://youtu.be/_yuPmf6i__c
 
