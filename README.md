@@ -1,9 +1,9 @@
 # Slidingmode-sim
-A Simulation UAV with python ,Matlab , \\
-C++ for FX4 \\
+A Simulation UAV with python ,Matlab (folder1) , \\
+C++(Control Position) for FX4 \\
 sliding mode control for tracking trajectorie 
 
-Simulation with python 
+Simulation with python , 
 https://youtu.be/_yuPmf6i__c 
 First test SMC in PX4 with Javsim
 https://youtu.be/zt1_hH6iNzQ
