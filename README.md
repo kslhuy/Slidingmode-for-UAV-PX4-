@@ -1,4 +1,4 @@
-# Slidingmode-sim
+# Slidingmode for PX4 ,
 A Simulation UAV with python ,Matlab (folder1) , \\
 C++(Position Control ) for FX4 \\
 sliding mode control for tracking trajectorie 
